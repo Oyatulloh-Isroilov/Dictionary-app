@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #793f9a;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* container */
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 85px 90px;
+  border-radius: 12px;
+  -webkit-box-shadow: 10px 8px 31px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 10px 8px 31px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 10px 8px 31px 0px rgba(34, 60, 80, 0.2);
+}
+
+/* search */
+
+.searchMenu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.searchMenu #wordInp {
+  width: 72%;
+  border: none;
+  border-bottom: 3.5px solid #793f9a;
+  outline: none;
+  padding: 5px 4px;
+  font-style: 20px;
+  color: #49028c;
+}
+
+.searchMenu #wordInp::placeholder {
+  color: #49028c;
+}
+
+.searchMenu #searchBtn {
+  padding: 16px;
+  width: 27%;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: #793f9a;
+}
+
+/* result */
+
+.resultMenu {
+  position: relative;
+}
+
+.resultMenu h2 {
+  font-size: 25px;
+  color: #49028c;
+}
+
+.resultMenu .inpWord {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.resultMenu button {
+  color: #49028c;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-style: 20px;
+}
+.resultMenu .infos {
+  display: flex;
+  gap: 13px;
+  margin: 7px 0px 20px 0px;
+  color: #a3a5be;
+}
+
+/* words */
+
+.wordMeaning {
+  color: #676979;
+  font-style: 18px;
+}
+
+.wordExample {
+  color: #676979;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.wordError {
+  margin-top: 55px;
+  text-align: center;
+  margin-right: 70px;
+}
